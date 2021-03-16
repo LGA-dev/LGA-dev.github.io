@@ -22,7 +22,7 @@ Also I struggled a lot with the design, the first version had videos and a lot o
 
 ## Screenshot
 
-![Example screenshot](./resources/images/portfolio-preview.png)
+![Example screenshot](./resources/images/portfolio-preview.jpg)
 
 ## Technologies
 
