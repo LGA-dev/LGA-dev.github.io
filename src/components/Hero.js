@@ -1,8 +1,5 @@
-import { GridItem, Box, Heading, Center, Flex, Stack, Text, Link } from "@chakra-ui/react"
-// Remove this later
-import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons' 
-import { Icon } from "@chakra-ui/react"
-import { FaGithubSquare, FaLinkedin, FaArrowAltCircleDown } from 'react-icons/fa';
+import { Box, Center, GridItem, Heading, Icon, Link, Stack, Text } from "@chakra-ui/react";
+import { FaArrowAltCircleDown, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
   return (
