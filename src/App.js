@@ -1,28 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import { Box } from "@chakra-ui/react"
+import { Container, Grid } from "@chakra-ui/react"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Box bg="tomato" w="100%" p={4} color="white">
-          Testing
-        </Box>
-      </header>
-    </div>
+    <Container maxW="container.xl" bg="tomato">
+      <Grid
+        bg="blue.100"
+        templateColumns={{ base: "1fr"}}
+        templateRows={{ base: "auto auto auto auto"}}
+        templateAreas={{ 
+          base: '"hero" "about" "projects" "contact"'
+        }}
+      >
+        
+      </Grid>
+    </Container>
   );
 }
 
