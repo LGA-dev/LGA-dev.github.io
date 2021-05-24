@@ -1,4 +1,5 @@
 import { Container, Grid } from "@chakra-ui/react"
+import About from "./components/About";
 import Hero from './components/Hero';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         }}
       >
         <Hero />
+        <About />
       </Grid>
     </Container>
   );
