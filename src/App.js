@@ -1,6 +1,7 @@
 import { Container, Grid } from "@chakra-ui/react"
 import About from "./components/About";
 import Hero from './components/Hero';
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       >
         <Hero />
         <About />
+        <Projects />
       </Grid>
     </Container>
   );
