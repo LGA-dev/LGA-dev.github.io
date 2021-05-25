@@ -5,15 +5,8 @@ const Hero = () => {
   return (
     <div>
       <GridItem gridArea="hero" bg="blue.500" w={"100%"} h={"100vh"}>
-        {/* TODO: Create Navbar component */}
-        {/* Header Navbar */}
-        <Center h="10%" bg="green.100">
-          <Link bg="green.500" mx={3}>Sobre mi</Link>
-          <Link bg="green.500" mx={3}>Proyectos</Link>
-          <Link bg="green.500" mx={3}>Contacto</Link>
-        </Center>
         {/* Header Content */}
-        <Stack spacing={8} h="80%" bg="yellow.100" justifyContent="center">
+        <Stack spacing={8} h="90%" bg="yellow.100" justifyContent="center">
           {/* Text */}
           <Stack spacing={3} bg="blue.500" textAlign="center" textColor="red.200">
             <Heading size="xl">Luciano Alcaraz</Heading>
