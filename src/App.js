@@ -3,10 +3,12 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from './components/Hero';
 import Projects from './components/Projects'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <Container maxW="container.xl" bg="tomato">
+      <Navbar />
       <Grid
         bg="blue.100"
         fontSize={["20px"]}
