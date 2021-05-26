@@ -1,49 +1,88 @@
-import { Box, Center, GridItem, Heading, Icon, Link, Stack, Text } from "@chakra-ui/react";
-import { FaArrowAltCircleDown, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { Box, Center, Flex, GridItem, Heading, Icon, Link, Stack, Text } from "@chakra-ui/react";
+import { FaCaretSquareDown, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import Pattern from '../assets/pattern.svg';
 
 const Hero = () => {
   return (
-    <div>
-      <GridItem gridArea="hero" bg="blue.500" w={"100%"} h={"100vh"}>
-        {/* Header Content */}
-        <Stack spacing={8} h="90%" bg="yellow.100" justifyContent="center">
-          {/* Text */}
-          <Stack spacing={3} bg="blue.500" textAlign="center" textColor="red.200">
-            <Heading size="xl">Luciano Alcaraz</Heading>
-            <Heading size="2xl">Desarrollador Front-end</Heading>
-          </Stack>
-          {/* Icons */}
-          <Box bg="red.500" textColor="red.200" d="flex" flexDirection="row" justifyContent="space-evenly" alignItems="center" >
-              <Link mx={3} bg="green.500">
-                <Center flexDirection="column">
-                  {/* Circle container */}
-                  <Box p={3} bg="cyan.500" borderRadius="100%">
-                    <Icon boxSize="3rem" as={ FaGithubSquare } />
-                  </Box>
-                  <Text mx={3} bg="yellow.500">Github</Text>
-                </Center>
-              </Link>
-              <Link mx={3} bg="green.500">
-                <Center flexDirection="column">
-                  {/* Circle container */}
-                  <Box p={3} bg="cyan.500" borderRadius="100%">
-                    <Icon boxSize="3rem" as={ FaLinkedin } />
-                  </Box>
-                  <Text mx={3} bg="yellow.500">Linkedin</Text>
-                </Center>
-              </Link>
-          </Box>
+    <GridItem
+      gridArea="hero"
+      width={"100%"}
+      height={"100vh"}
+      background="#5d37a8"
+      backgroundImage={Pattern}
+    >
+      {/* This hidden box helps me to keep the Header Content in the center of the page layout */}
+      <Box height={"10%"} visibility="hidden">
+        
+      </Box>
+      {/* Header Content */}
+      <Stack
+        spacing={16}
+        height={"80%"}
+        justifyContent="center"
+      >
+        {/* Heading Text */}
+        <Stack
+          spacing={3}
+          textAlign="center"
+          textColor="#f3f3f3"
+        >
+          <Heading size="xl">Luciano Alcaraz</Heading>
+          <Heading size="2xl">Desarrollador Front-end</Heading>
         </Stack>
-        {/* Header Arrow */}
-        <Box h="10%" bg="red.100">
-          <Center h="100%">
-            <Link>
-              <Icon boxSize="3rem" as={ FaArrowAltCircleDown } />
-            </Link>
-          </Center>
-        </Box>
-      </GridItem>
-    </div>
+        {/* Profile Icons */}
+        <Flex
+          flexDirection="row"
+          justifyContent="space-evenly"
+          alignItems="center"
+          textColor="#f3f3f3"
+        >
+          <Link width={24}>
+            <Center flexDirection="column">
+              {/* Circle container for Icon */}
+              <Box
+                p={3}
+                borderRadius="20%"
+                bg="#7e57c2"
+              >
+                <Icon
+                  boxSize={12}
+                  as={ FaGithubSquare }
+                />
+              </Box>
+              <Text>Github</Text>
+            </Center>
+          </Link>
+          <Link width={24}>
+            <Center flexDirection="column">
+              {/* Circle container for Icon */}
+              <Box
+                p={3}
+                borderRadius="20%"
+                bg="#7e57c2"
+              >
+                <Icon
+                  boxSize={12}
+                  as={ FaLinkedin }
+                />
+              </Box>
+              <Text>Linkedin</Text>
+            </Center>
+          </Link>
+        </Flex>
+      </Stack>
+      {/* Header Arrow Icon */}
+      <Box height={"10%"} textColor="#f3f3f3">
+        <Center height={"100%"}>
+          <Link>
+            <Icon
+              boxSize={12}
+              as={ FaCaretSquareDown }
+            />
+          </Link>
+        </Center>
+      </Box>
+    </GridItem>
   );
 }
 
