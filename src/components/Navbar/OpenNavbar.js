@@ -1,8 +1,12 @@
 import { Flex, Heading, Link, Stack } from "@chakra-ui/layout";
 import { Icon } from "@chakra-ui/react";
+import { useContext } from "react";
 import { FaTimes } from 'react-icons/fa';
+import { HandleOpenContext } from "../../context/HandleOpenContext";
 
 const OpenNavbar = () => {
+  const { handleOpen } = useContext(HandleOpenContext)
+
   return (
     <Flex
       ml={-4}
