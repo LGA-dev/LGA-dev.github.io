@@ -1,16 +1,20 @@
-import { Container, Grid } from "@chakra-ui/react"
+import { Container, Grid, Box } from "@chakra-ui/react"
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Hero from '../components/Hero';
 import Projects from '../components/Projects'
 import Header from '../components/Header'
+import Pattern from '../assets/pattern.svg';
 
 const Home = () => {
   return (
-    <Container maxW="container.xl" bg="tomato">
+    <Box
+      maxW="100vw"
+      background="#5d37a8"
+      backgroundImage={Pattern}
+    >
       <Header />
       <Grid
-        bg="blue.100"
         fontSize={["20px"]}
         templateColumns={{ base: "1fr"}}
         templateRows={{ base: "auto auto auto auto"}}
@@ -23,7 +27,7 @@ const Home = () => {
         <Projects />
         <Contact />
       </Grid>
-    </Container>
+    </Box>
   );
 }
 

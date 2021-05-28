@@ -17,6 +17,7 @@ const Hero = () => {
       </Box>
       {/* Header Content */}
       <Stack
+        p={3}
         spacing={16}
         height={"80%"}
         justifyContent="center"
