@@ -7,8 +7,7 @@ const About = () => {
       width={"100%"}
       minHeight={"100vh"}
       textAlign="left"
-      // background="#fafafa"
-      background="tomato"
+      background="#fafafa"
       textColor="#111"
     >
       <Heading textAlign="center" my={3}>Sobre mi</Heading>
