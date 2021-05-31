@@ -2,27 +2,29 @@ import { Button } from "@chakra-ui/button";
 import { Flex, Heading, Stack, Text } from "@chakra-ui/layout";
 import { Icon, Image } from "@chakra-ui/react";
 
-const ProjectCard = ({projectName, projectDescription, imageURL, techStack}) => {
-  // console.log(techStack)
+const ProjectCard = ({ projectName, projectDescription, imageURL, techStack }) => {
   return (
     <Stack
       spacing={6}
-      p={6}
+      p={3}
       mt={3}
-      borderWidth="1px"
-      borderRadius="lg"
       boxShadow="base"
-      rounded="md"
+      borderRadius="lg"
       background="#ffffff"
     >
+      {/* Project name */}
       <Heading size="lg">{projectName}</Heading>
-      <Image src={imageURL}/>
-      <Text fontSize="md">{projectDescription}</Text>
+      {/* Project image */}
+      <Image src={imageURL} />
+      {/* Project description */}
+      <Text>{projectDescription}</Text>
+      {/* Project stack icons */}
       <Flex justifyContent="center">
         {techStack && techStack.map((tech) => {
-          return <Icon boxSize={12} as={ tech }/>
+          return <Icon boxSize={12} as={tech} />
         })}
       </Flex>
+      {/* Project links */}
       <Flex
         justifyContent="space-between"
         alignItems="center"

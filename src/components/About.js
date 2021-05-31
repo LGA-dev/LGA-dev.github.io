@@ -4,20 +4,20 @@ const About = () => {
   return (
     <GridItem
       gridArea="about"
-      width={"100%"}
-      minHeight={"100vh"}
+      py={6}
       textAlign="left"
-      background="#fafafa"
       textColor="#111"
+      background="#f4f4f4"
     >
-      <Heading textAlign="center" my={3}>Sobre mi</Heading>
+      <Heading textAlign="center">Sobre mi</Heading>
+      {/* About Section Content */}
       <Stack
         spacing={6}
-        mt={3}
         p={3}
-        background="#ffffff"
+        mt={3}
+        borderRadius="lg"
         boxShadow="base"
-        rounded="md"
+        background="#ffffff"
       >
         <Stack>
           <Heading size="lg">Quién soy</Heading>

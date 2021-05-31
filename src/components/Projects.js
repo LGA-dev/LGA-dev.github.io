@@ -7,31 +7,31 @@ const Projects = () => {
   return (
     <GridItem
       gridArea="projects"
-      width={"100%"}
-      minHeight={"100vh"}
+      py={6}
       textAlign="left"
       background="#f4f4f4"
-      // background="tomato"
-      textColor="#111"
-      py={12}
     >
       <Heading textAlign="center">Proyectos</Heading>
+      {/* Projects Section Content */}
       <Stack
         spacing={6}
-        mt={3}
         p={3}
+        mt={3}
         boxShadow="base"
-        rounded="md"
+        borderRadius="lg"
         background="#ffffff"
       >
+        {/* <Heading size="lg">Sarasa</Heading> */}
+        {/* Deberia agregar otro heading acá y crear dos Stack (Heading+Text) y (Heading+SimpleGrid) */}
         <Text>
-          A continuación podes encontrar todos mis proyectos terminados. 
+          A continuación podes encontrar todos mis proyectos terminados.
           Aca podes ver todas las tecnologias con las cuales trabajo.
           Selecciona una tecnología para ver sólo los proyectos en los que se ha utilizado.
         </Text>
+        <Heading size="lg">Tecnologías</Heading>
         <SimpleGrid
           p={2}
-          columns={[2,3]}
+          columns={[2, 3]}
           spacing={2}
         >
           <Button>React</Button>
