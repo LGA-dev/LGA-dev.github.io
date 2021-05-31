@@ -59,7 +59,7 @@ const Contact = () => {
               {/* Square container for Icon */}
               <Box
                 p={3}
-                borderRadius="20%"
+                borderRadius="lg"
                 bg="#7e57c2"
               >
                 <Icon
