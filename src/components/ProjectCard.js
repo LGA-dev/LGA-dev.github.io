@@ -7,7 +7,7 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStack }) =
     <Stack
       spacing={6}
       p={3}
-      mt={3}
+      mt={6}
       boxShadow="base"
       borderRadius="lg"
       background="#ffffff"

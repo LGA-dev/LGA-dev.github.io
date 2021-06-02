@@ -3,8 +3,12 @@ import { GridItem, Heading, Stack, Text } from "@chakra-ui/layout";
 const About = () => {
   return (
     <GridItem
+      id="about"
       gridArea="about"
-      py={6}
+      // This padding top helps the title not to be hidden under the navbar
+      pt={12}
+      // This padding bottom helps to separate the about section of the projects section a bit
+      pb={1}
       textAlign="left"
       textColor="#111"
       background="#f4f4f4"

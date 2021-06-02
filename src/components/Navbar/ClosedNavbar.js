@@ -13,6 +13,7 @@ const ClosedNavbar = () => {
       py={2}
       px={5}
       position="fixed"
+      height={12}
       minW="100vw"
       justifyContent="space-between"
       alignItems="center"

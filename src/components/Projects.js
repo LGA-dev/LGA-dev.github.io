@@ -6,8 +6,13 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <GridItem
+      id="projects"
       gridArea="projects"
-      py={6}
+      // This padding top helps the title not to be hidden under the navbar
+      pt={12}
+      // This padding bottom helps to separate the projects section of the contact section a bit
+      pb={6}
+      // my={6}
       textAlign="left"
       background="#f4f4f4"
     >
