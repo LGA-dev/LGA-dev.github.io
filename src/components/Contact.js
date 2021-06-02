@@ -5,6 +5,7 @@ import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
 const Contact = () => {
   return (
     <GridItem
+      id="contact"
       gridArea="contact"
       py={12}
       textColor="#f3f3f3"
@@ -32,7 +33,10 @@ const Contact = () => {
           justifyContent="space-evenly"
           alignItems="center"
         >
-          <Link width={24}>
+          <Link
+            width={24}
+            href="mailto:LGA-dev@hotmail.com"
+          >
             <Center flexDirection="column">
               {/* Square container for Icon */}
               <Box
@@ -54,7 +58,10 @@ const Contact = () => {
               </Text>
             </Center>
           </Link>
-          <Link width={24}>
+          <Link
+            width={24}
+            href="https://www.linkedin.com/in/luciano-alcaraz-39aa10189/"
+          >
             <Center flexDirection="column">
               {/* Square container for Icon */}
               <Box

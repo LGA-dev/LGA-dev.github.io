@@ -1,5 +1,6 @@
 import { Box, Center, Flex, GridItem, Heading, Icon, Link, Stack, Text } from "@chakra-ui/react";
 import { FaCaretSquareDown, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import { Link as ReactLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -35,7 +36,11 @@ const Hero = () => {
           justifyContent="space-evenly"
           alignItems="center"
         >
-          <Link width={24}>
+          {/* Link to Github */}
+          <Link
+            width={24}
+            href="https://github.com/alstroemerieae"
+          >
             <Center flexDirection="column">
               {/* Square container for Icon */}
               <Box
@@ -57,7 +62,11 @@ const Hero = () => {
               </Text>
             </Center>
           </Link>
-          <Link width={24}>
+          {/* Link to Linkedin */}
+          <Link
+            width={24}
+            href="https://www.linkedin.com/in/luciano-alcaraz-39aa10189/"
+          >
             <Center flexDirection="column">
               {/* Square container for Icon */}
               <Box
@@ -84,7 +93,7 @@ const Hero = () => {
       {/* Header Arrow Icon (Next Section) */}
       <Box height="10%">
         <Center height="100%">
-          <Link>
+          <Link href="#about">
             <Icon
               boxSize={12}
               as={FaCaretSquareDown}

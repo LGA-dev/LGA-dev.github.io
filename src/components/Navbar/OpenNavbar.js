@@ -31,17 +31,26 @@ const OpenNavbar = () => {
         flexDirection="column"
         alignSelf="center"
       >
-        <Link>
+        <Link
+          href="#about"
+          onClick={() => handleOpen(false)}
+        >
           <Heading>
             Sobre mi
           </Heading>
         </Link>
-        <Link>
+        <Link
+          href="#projects"
+          onClick={() => handleOpen(false)}
+        >
           <Heading>
             Proyectos
           </Heading>
         </Link>
-        <Link>
+        <Link
+          href="#contact"
+          onClick={() => handleOpen(false)}
+        >
           <Heading>
             Contacto
           </Heading>
