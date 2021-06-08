@@ -25,6 +25,8 @@ const Projects = () => {
         boxShadow="base"
         borderRadius="lg"
         background="#ffffff"
+        // position="relative"
+        // zIndex={5}
       >
         {/* <Heading size="lg">Sarasa</Heading> */}
         {/* Deberia agregar otro heading acá y crear dos Stack (Heading+Text) y (Heading+SimpleGrid) */}
@@ -39,14 +41,14 @@ const Projects = () => {
           columns={[2, 3]}
           spacing={2}
         >
-          <Button>React</Button>
-          <Button>Javascript</Button>
-          <Button>HTML</Button>
-          <Button>CSS</Button>
-          <Button>Sass</Button>
-          <Button>Bootstrap</Button>
-          <Button>Node.js</Button>
-          <Button>Postgres</Button>
+          <Button position="static">React</Button>
+          <Button position="static">Javascript</Button>
+          <Button position="static">HTML</Button>
+          <Button position="static">CSS</Button>
+          <Button position="static">Sass</Button>
+          <Button position="static">Bootstrap</Button>
+          <Button position="static">Node.js</Button>
+          <Button position="static">Postgres</Button>
         </SimpleGrid>
       </Stack>
       <ProjectCard

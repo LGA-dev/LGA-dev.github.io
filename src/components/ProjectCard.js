@@ -29,8 +29,8 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStack }) =
         justifyContent="space-between"
         alignItems="center"
       >
-        <Button>Demo online</Button>
-        <Button>Código fuente</Button>
+        <Button position="static">Demo online</Button>
+        <Button position="static">Código fuente</Button>
       </Flex>
     </Stack>
   );
