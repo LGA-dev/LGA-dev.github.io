@@ -1,7 +1,19 @@
 import { Button } from "@chakra-ui/button";
-import { GridItem, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/layout";
+import { GridItem, Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/layout";
 import { FaBootstrap, FaCss3Alt, FaHtml5, FaJs } from 'react-icons/fa';
 import ProjectCard from "./ProjectCard";
+import { Image } from "@chakra-ui/react";
+import htmlIcon from '../assets/icons/html.svg';
+import jsIcon from '../assets/icons/javascript.svg';
+import cssIcon from '../assets/icons/css.svg';
+import sassIcon from '../assets/icons/sass.svg';
+import bootstrapIcon from '../assets/icons/bootstrap.svg';
+import chakraIcon from '../assets/icons/chakra.png';
+import reactIcon from '../assets/icons/react.svg';
+import reduxIcon from '../assets/icons/redux.svg';
+import nodeIcon from '../assets/icons/nodejs.svg';
+import postgresIcon from '../assets/icons/postgres.svg';
+import ProjectButton from "./ProjectButton";
 
 const Projects = () => {
   return (
@@ -47,14 +59,16 @@ const Projects = () => {
             columns={[2, 3]}
             spacing={2}
           >
-            <Button position="static">React</Button>
-            <Button position="static">Javascript</Button>
-            <Button position="static">HTML</Button>
-            <Button position="static">CSS</Button>
-            <Button position="static">Sass</Button>
-            <Button position="static">Bootstrap</Button>
-            <Button position="static">Node.js</Button>
-            <Button position="static">Postgres</Button>
+            <ProjectButton icon={htmlIcon} iconDescription={"HTML5"}/>
+            <ProjectButton icon={jsIcon} iconDescription={"Javascript"}/>
+            <ProjectButton icon={cssIcon} iconDescription={"CSS3"}/>
+            <ProjectButton icon={sassIcon} iconDescription={"Sass"}/>
+            <ProjectButton icon={bootstrapIcon} iconDescription={"Bootstrap5"}/>
+            <ProjectButton icon={chakraIcon} iconDescription={"ChakraUI"}/>
+            <ProjectButton icon={reactIcon} iconDescription={"React"}/>
+            <ProjectButton icon={reduxIcon} iconDescription={"Redux"}/>
+            <ProjectButton icon={nodeIcon} iconDescription={"Node.js"}/>
+            <ProjectButton icon={postgresIcon} iconDescription={"PostgreSQL"}/>
           </SimpleGrid>
         </Stack>
       </Stack>
