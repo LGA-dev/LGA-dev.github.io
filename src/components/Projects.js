@@ -16,7 +16,6 @@ const Projects = () => {
       textAlign="left"
       background="#f4f4f4"
     >
-      <Heading textAlign="center">Proyectos</Heading>
       {/* Projects Section Content */}
       <Stack
         spacing={6}
@@ -28,28 +27,36 @@ const Projects = () => {
         // position="relative"
         // zIndex={5}
       >
-        {/* <Heading size="lg">Sarasa</Heading> */}
-        {/* Deberia agregar otro heading acá y crear dos Stack (Heading+Text) y (Heading+SimpleGrid) */}
+        <Heading
+          as="u"
+          textDecorationColor="#7e57c2"
+          py={3}
+          textAlign="center"
+        >
+          Proyectos
+        </Heading>
         <Text>
           A continuación podes encontrar todos mis proyectos terminados.
           Aca podes ver todas las tecnologias con las cuales trabajo.
           Selecciona una tecnología para ver sólo los proyectos en los que se ha utilizado.
         </Text>
-        <Heading size="lg">Tecnologías</Heading>
-        <SimpleGrid
-          p={2}
-          columns={[2, 3]}
-          spacing={2}
-        >
-          <Button position="static">React</Button>
-          <Button position="static">Javascript</Button>
-          <Button position="static">HTML</Button>
-          <Button position="static">CSS</Button>
-          <Button position="static">Sass</Button>
-          <Button position="static">Bootstrap</Button>
-          <Button position="static">Node.js</Button>
-          <Button position="static">Postgres</Button>
-        </SimpleGrid>
+        <Stack>
+          <Heading size="lg">Tecnologías</Heading>
+          <SimpleGrid
+            p={2}
+            columns={[2, 3]}
+            spacing={2}
+          >
+            <Button position="static">React</Button>
+            <Button position="static">Javascript</Button>
+            <Button position="static">HTML</Button>
+            <Button position="static">CSS</Button>
+            <Button position="static">Sass</Button>
+            <Button position="static">Bootstrap</Button>
+            <Button position="static">Node.js</Button>
+            <Button position="static">Postgres</Button>
+          </SimpleGrid>
+        </Stack>
       </Stack>
       <ProjectCard
         projectName={"Project #1"}

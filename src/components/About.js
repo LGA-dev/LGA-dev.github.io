@@ -13,7 +13,6 @@ const About = () => {
       textColor="#111"
       background="#f4f4f4"
     >
-      <Heading textAlign="center">Sobre mi</Heading>
       {/* About Section Content */}
       <Stack
         spacing={6}
@@ -23,6 +22,14 @@ const About = () => {
         boxShadow="base"
         background="#ffffff"
       >
+        <Heading
+          as="u"
+          textDecorationColor="#7e57c2"
+          py={3}
+          textAlign="center"
+        >
+          Sobre mi
+        </Heading>
         <Stack>
           <Heading size="lg">Quién soy</Heading>
           <Text>
