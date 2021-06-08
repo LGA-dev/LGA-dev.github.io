@@ -1,6 +1,7 @@
 import { Box, Center, Flex, GridItem, Heading, Icon, Link, Stack, Text } from "@chakra-ui/react";
 import { FaCaretSquareDown, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { Link as ReactLink } from "react-router-dom";
+import ProfileIcon from "./ProfileIcon";
 
 const Hero = () => {
   return (
@@ -37,57 +38,17 @@ const Hero = () => {
           alignItems="center"
         >
           {/* Link to Github */}
-          <Link
-            width={24}
-            href="https://github.com/alstroemerieae"
-          >
-            <Center flexDirection="column">
-              {/* Square container for Icon */}
-              <Box
-                p={3}
-                borderRadius="lg"
-                backgroundColor="#7e57c2"
-              >
-                <Icon
-                  boxSize={12}
-                  as={FaGithubSquare}
-                />
-              </Box>
-              {/* Icon name */}
-              <Text
-                mt={1}
-                fontWeight="600"
-              >
-                Github
-              </Text>
-            </Center>
-          </Link>
+          <ProfileIcon
+            url={"https://github.com/alstroemerieae"}
+            icon={FaGithubSquare}
+            iconDescription={"Github"}
+          />
           {/* Link to Linkedin */}
-          <Link
-            width={24}
-            href="https://www.linkedin.com/in/luciano-alcaraz-39aa10189/"
-          >
-            <Center flexDirection="column">
-              {/* Square container for Icon */}
-              <Box
-                p={3}
-                borderRadius="lg"
-                backgroundColor="#7e57c2"
-              >
-                <Icon
-                  boxSize={12}
-                  as={FaLinkedin}
-                />
-              </Box>
-              {/* Icon name */}
-              <Text
-                mt={1}
-                fontWeight="600"
-              >
-                Linkedin
-              </Text>
-            </Center>
-          </Link>
+          <ProfileIcon
+            url={"https://www.linkedin.com/in/luciano-alcaraz-39aa10189/"}
+            icon={FaLinkedin}
+            iconDescription={"Linkedin"}
+          />
         </Flex>
       </Stack>
       {/* Header Arrow Icon (Next Section) */}

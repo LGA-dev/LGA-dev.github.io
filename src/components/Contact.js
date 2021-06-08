@@ -1,6 +1,7 @@
 import { Box, Flex, GridItem, Heading, Stack, Text } from "@chakra-ui/layout";
 import { Center, Icon, Link } from "@chakra-ui/react";
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import ProfileIcon from "./ProfileIcon";
 
 const Contact = () => {
   return (
@@ -33,56 +34,18 @@ const Contact = () => {
           justifyContent="space-evenly"
           alignItems="center"
         >
-          <Link
-            width={24}
-            href="mailto:LGA-dev@hotmail.com"
-          >
-            <Center flexDirection="column">
-              {/* Square container for Icon */}
-              <Box
-                p={3}
-                borderRadius="lg"
-                bg="#7e57c2"
-              >
-                <Icon
-                  boxSize={12}
-                  as={FaEnvelope}
-                />
-              </Box>
-              {/* Icon name */}
-              <Text
-                mt={1}
-                fontWeight="600"
-              >
-                Email
-              </Text>
-            </Center>
-          </Link>
-          <Link
-            width={24}
-            href="https://www.linkedin.com/in/luciano-alcaraz-39aa10189/"
-          >
-            <Center flexDirection="column">
-              {/* Square container for Icon */}
-              <Box
-                p={3}
-                borderRadius="lg"
-                bg="#7e57c2"
-              >
-                <Icon
-                  boxSize={12}
-                  as={FaLinkedin}
-                />
-              </Box>
-              {/* Icon name */}
-              <Text
-                mt={1}
-                fontWeight="600"
-              >
-                Linkedin
-              </Text>
-            </Center>
-          </Link>
+          {/* Link to Email */}
+          <ProfileIcon
+            url={"mailto:LGA-dev@hotmail.com"}
+            icon={FaEnvelope}
+            iconDescription={"Email"}
+          />
+          {/* Link to Linkedin */}
+          <ProfileIcon
+            url={"https://www.linkedin.com/in/luciano-alcaraz-39aa10189/"}
+            icon={FaLinkedin}
+            iconDescription={"Linkedin"}
+          />
         </Flex>
       </Stack>
     </GridItem>
