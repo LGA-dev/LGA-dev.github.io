@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { HandleOpenContext } from "../context/HandleOpenContext";
+import { HandlerContext } from "../context/HandlerContext";
 import ClosedNavbar from "./Navbar/ClosedNavbar";
 import OpenNavbar from "./Navbar/OpenNavbar";
 
 const Header = () => {
-  const { isOpen } = useContext(HandleOpenContext)
+  const { isOpen } = useContext(HandlerContext)
   
   return (
       <div>

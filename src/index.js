@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { ChakraProvider } from "@chakra-ui/react"
-import { HandleOpenProvider } from './context/HandleOpenContext'
+import { HandlerProvider } from './context/HandlerContext'
 
 ReactDOM.render(
   <ChakraProvider>
     <React.StrictMode>
-      <HandleOpenProvider>
+      <HandlerProvider>
         <App />
-      </HandleOpenProvider>
+      </HandlerProvider>
     </React.StrictMode>
   </ChakraProvider>,
   document.getElementById('root')

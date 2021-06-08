@@ -2,10 +2,10 @@ import { Flex, Heading } from "@chakra-ui/layout";
 import { Icon } from "@chakra-ui/react";
 import { useContext } from "react";
 import { FaBars } from 'react-icons/fa';
-import { HandleOpenContext } from "../../context/HandleOpenContext";
+import { HandlerContext } from "../../context/HandlerContext";
 
 const ClosedNavbar = () => {
-  const { handleOpen } = useContext(HandleOpenContext)
+  const { handleOpen } = useContext(HandlerContext)
 
   return (
     <Flex

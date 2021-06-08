@@ -1,8 +1,8 @@
 import { createContext, useState } from "react";
 
-export const HandleOpenContext = createContext();
+export const HandlerContext = createContext();
 
-export const HandleOpenProvider = (props) => {
+export const HandlerProvider = (props) => {
   let [isOpen, setIsOpen] = useState(false)
   const handleOpen = (boolean) => {
     setIsOpen(boolean)
@@ -10,10 +10,10 @@ export const HandleOpenProvider = (props) => {
   // console.log(isOpen)
   
   return (
-    <HandleOpenContext.Provider value={{isOpen, handleOpen}}>
+    <HandlerContext.Provider value={{isOpen, handleOpen}}>
       {props.children}
-    </HandleOpenContext.Provider>
+    </HandlerContext.Provider>
   )
 }
 
-export default HandleOpenContext;
+export default HandlerContext;
