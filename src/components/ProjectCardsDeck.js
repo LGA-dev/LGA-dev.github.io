@@ -5,7 +5,7 @@ import Javascript from '../assets/icons/javascript.svg';
 import ProjectCard from "./ProjectCard";
 
 const ProjectCardsDeck = ({activeStack}) => {
-  // techStack property is being used to filter the projects by tech
+  // techStack property is being used to filter the projects by tech and is not being passed into the ProjectCard component
   // techStackIcons property is used to pass an array of icons/images to ProjectCard component
   const initialCards = [
     {
@@ -13,14 +13,18 @@ const ProjectCardsDeck = ({activeStack}) => {
       projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim ducimus et error consequuntur est?",
       imageURL: "https://via.placeholder.com/1280x720",
       techStack: ["HTML5", "CSS3"],
-      techStackIcons: [HTML5, CSS3]
+      techStackIcons: [HTML5, CSS3],
+      projectDemo: "https://www.google.com",
+      projectRepo: "https://www.github.com"
     },
     {
       projectName: "Project #2",
       projectDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim ducimus et error consequuntur est?",
       imageURL: "https://via.placeholder.com/1280x720",
       techStack: ["HTML5", "Javascript"],
-      techStackIcons: [HTML5, Javascript]
+      techStackIcons: [HTML5, Javascript],
+      projectDemo: "https://www.google.com",
+      projectRepo: "https://www.github.com"
     }
   ]
   
@@ -37,7 +41,14 @@ const ProjectCardsDeck = ({activeStack}) => {
     <Box>
       <h2>{activeStack}</h2>
       {filteredCards.map(card => (
-        <ProjectCard projectName={card.projectName} projectDescription={card.projectDescription} imageURL={card.imageURL} techStackIcons={card.techStackIcons}/>
+        <ProjectCard
+          projectName={card.projectName}
+          projectDescription={card.projectDescription}
+          imageURL={card.imageURL}
+          techStackIcons={card.techStackIcons}
+          projectDemo={card.projectDemo}
+          projectRepo={card.projectRepo}
+        />
       ))}
     </Box>
   );

@@ -1,8 +1,8 @@
 import { Button } from "@chakra-ui/button";
 import { Flex, Heading, Stack, Text } from "@chakra-ui/layout";
-import { Image } from "@chakra-ui/react";
+import { Image, Link } from "@chakra-ui/react";
 
-const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons }) => {
+const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons, projectDemo, projectRepo }) => {
   return (
     <Stack
       spacing={6}
@@ -31,8 +31,12 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons
         justifyContent="space-between"
         alignItems="center"
       >
-        <Button position="static">Demo online</Button>
-        <Button position="static">Código fuente</Button>
+        <Link href={projectDemo}>
+          <Button position="static">Demo online</Button>
+        </Link>
+        <Link href={projectRepo}>
+          <Button position="static">Código fuente</Button>
+        </Link>
       </Flex>
     </Stack>
   );
