@@ -1,21 +1,22 @@
-import { Button } from "@chakra-ui/button";
-import { GridItem, Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/layout";
-import { FaBootstrap, FaCss3Alt, FaHtml5, FaJs } from 'react-icons/fa';
-import ProjectCard from "./ProjectCard";
-import { Image } from "@chakra-ui/react";
-import htmlIcon from '../assets/icons/html.svg';
-import jsIcon from '../assets/icons/javascript.svg';
-import cssIcon from '../assets/icons/css.svg';
-import sassIcon from '../assets/icons/sass.svg';
+import { GridItem, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/layout";
+import { useContext } from "react";
 import bootstrapIcon from '../assets/icons/bootstrap.svg';
 import chakraIcon from '../assets/icons/chakra.png';
-import reactIcon from '../assets/icons/react.svg';
-import reduxIcon from '../assets/icons/redux.svg';
+import cssIcon from '../assets/icons/css.svg';
+import htmlIcon from '../assets/icons/html.svg';
+import jsIcon from '../assets/icons/javascript.svg';
 import nodeIcon from '../assets/icons/nodejs.svg';
 import postgresIcon from '../assets/icons/postgres.svg';
+import reactIcon from '../assets/icons/react.svg';
+import reduxIcon from '../assets/icons/redux.svg';
+import sassIcon from '../assets/icons/sass.svg';
+import { HandlerContext } from "../context/HandlerContext";
 import ProjectButton from "./ProjectButton";
+import ProjectCardsDeck from "./ProjectCardsDeck";
 
 const Projects = () => {
+  const { activeStack } = useContext(HandlerContext)
+
   return (
     <GridItem
       id="projects"
@@ -72,18 +73,7 @@ const Projects = () => {
           </SimpleGrid>
         </Stack>
       </Stack>
-      <ProjectCard
-        projectName={"Project #1"}
-        projectDescription={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab enim ducimus et error consequuntur est?"}
-        imageURL={"https://via.placeholder.com/1280x720"}
-        techStack={[FaHtml5, FaCss3Alt, FaJs, FaBootstrap]}
-      />
-      <ProjectCard
-        projectName={"Project #2"}
-        projectDescription={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corrupti qui numquam libero soluta."}
-        imageURL={"https://via.placeholder.com/1280x720"}
-        techStack={[FaHtml5, FaJs]}
-      />
+      <ProjectCardsDeck activeStack={activeStack}/>
     </GridItem>
   );
 }
