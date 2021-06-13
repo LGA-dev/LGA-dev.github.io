@@ -15,7 +15,7 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons
       {/* Project name */}
       <Heading size="lg">{projectName}</Heading>
       {/* Project image */}
-      <Image src={imageURL} />
+      <Image boxShadow="outline" src={imageURL} />
       {/* Project description */}
       <Text>{projectDescription}</Text>
       {/* Project tech stack icons */}
