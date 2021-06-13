@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ChakraProvider } from "@chakra-ui/react"
 import { HandlerProvider } from './context/HandlerContext'
+import customTheme from './customTheme';
 
 ReactDOM.render(
-  <ChakraProvider>
+  <ChakraProvider theme={customTheme}>
     <React.StrictMode>
       <HandlerProvider>
         <App />
