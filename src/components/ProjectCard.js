@@ -10,12 +10,12 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons
       mt={6}
       boxShadow="base"
       borderRadius="lg"
-      background="#ffffff"
+      background="white"
     >
       {/* Project name */}
       <Heading size="lg">{projectName}</Heading>
       {/* Project image */}
-      <Image boxShadow="outline" src={imageURL} />
+      <Image border="2px solid" borderColor="primary.light" src={imageURL} />
       {/* Project description */}
       <Text>{projectDescription}</Text>
       {/* Project tech stack icons */}

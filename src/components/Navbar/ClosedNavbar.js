@@ -17,8 +17,7 @@ const ClosedNavbar = () => {
       minW="100vw"
       justifyContent="space-between"
       alignItems="center"
-      background="#7e57c2"
-      textColor="#f3f3f3"
+      background="primary.base"
     >
       <Heading size="md">Luciano Alcaraz</Heading>
       <Icon

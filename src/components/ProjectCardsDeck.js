@@ -91,7 +91,7 @@ const ProjectCardsDeck = ({activeStack}) => {
   
   return (
     <Box>
-      <h2>{activeStack}</h2>
+      {/* <h2>{activeStack}</h2> */}
       {filteredCards.map(card => (
         <ProjectCard
           projectName={card.projectName}

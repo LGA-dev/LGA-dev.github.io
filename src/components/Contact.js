@@ -9,7 +9,6 @@ const Contact = () => {
       id="contact"
       gridArea="contact"
       py={12}
-      textColor="#f3f3f3"
     >
       <Heading textAlign="center">Contacto</Heading>
       {/* Contact Section Content */}
@@ -24,7 +23,7 @@ const Contact = () => {
         <Text
           p={3}
           borderRadius="lg"
-          bg="#7e57c2"
+          backgroundColor="primary.base"
         >
           Si crees que encajaría con tu equipo,
           entonces no dudes en enviarme un correo o un mensaje en LinkedIn!

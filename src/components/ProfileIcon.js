@@ -13,7 +13,7 @@ const ProfileIcon = ({url, icon, iconDescription}) => {
         <Box
           p={3}
           borderRadius="lg"
-          backgroundColor="#7e57c2"
+          backgroundColor="primary.base"
         >
           <Icon
             boxSize={12}

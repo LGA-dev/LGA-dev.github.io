@@ -17,7 +17,8 @@ const Projects = () => {
       pb={6}
       // my={6}
       textAlign="left"
-      background="#f4f4f4"
+      background="isabelline"
+      textColor="black"
     >
       {/* Projects Section Content */}
       <Stack
@@ -26,13 +27,13 @@ const Projects = () => {
         mt={3}
         boxShadow="base"
         borderRadius="lg"
-        background="#ffffff"
+        background="white"
         // position="relative"
         // zIndex={5}
       >
         <Heading
           as="u"
-          textDecorationColor="#7e57c2"
+          textDecorationColor="primary.light"
           py={3}
           textAlign="center"
         >
@@ -43,6 +44,7 @@ const Projects = () => {
           Aca podes ver todas las tecnologias con las cuales trabajo.
           Selecciona una tecnología para ver sólo los proyectos en los que se ha utilizado.
         </Text>
+        {/* Buttons to filter projects by tech */}
         <ProjectButtonsGroup/>
       </Stack>
       <ProjectCardsDeck activeStack={activeStack}/>

@@ -5,13 +5,15 @@ import Contact from "../components/Contact";
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
+// import theme from '../theme';
 
 const Home = () => {
   return (
     <Box
       maxWidth="100vw"
       fontSize={["18px"]}
-      background="#5d37a8"
+      backgroundColor="primary.dark"
+      textColor="white"
       backgroundImage={Pattern}
     >
       <Header />

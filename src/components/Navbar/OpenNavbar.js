@@ -17,8 +17,7 @@ const OpenNavbar = () => {
       minH="100vh"
       justifyContent="space-between"
       alignItems="start"
-      background="#7e57c2"
-      textColor="#f3f3f3"
+      background="primary.base"
       >
       {/* This hidden Icon helps me to keep the links container in the center of the page layout*/}
       <Icon

@@ -13,7 +13,14 @@ import ProjectButton from "./ProjectButton";
 const ProjectButtonsGroup = () => {
   return (
     <Stack>
-      <Heading size="lg">Tecnologías</Heading>
+      <Heading
+        as="u"
+        textDecorationColor="primary.light"
+        size="lg"
+        pb={3}
+      >
+        Tecnologías
+      </Heading>
       <Flex wrap="wrap">
         <ProjectButton icon={htmlIcon} iconDescription={"HTML5"}/>
         <ProjectButton icon={jsIcon} iconDescription={"Javascript"}/>

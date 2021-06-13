@@ -2,12 +2,13 @@ import { Box, Center, Flex, GridItem, Heading, Icon, Link, Stack, Text } from "@
 import { FaCaretSquareDown, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { Link as ReactLink } from "react-router-dom";
 import ProfileIcon from "./ProfileIcon";
+import customTheme from '../customTheme';
+
 
 const Hero = () => {
   return (
     <GridItem
       gridArea="hero"
-      textColor="#f3f3f3"
     >
       {/* This hidden empty box helps me to keep the Hero Content in the center of the page layout */}
       <Box

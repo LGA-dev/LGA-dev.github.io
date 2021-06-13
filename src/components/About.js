@@ -10,8 +10,8 @@ const About = () => {
       // This padding bottom helps to separate the about section of the projects section a bit
       pb={1}
       textAlign="left"
-      textColor="#111"
-      background="#f4f4f4"
+      background="isabelline"
+      textColor="black"
     >
       {/* About Section Content */}
       <Stack
@@ -20,18 +20,25 @@ const About = () => {
         mt={3}
         borderRadius="lg"
         boxShadow="base"
-        background="#ffffff"
+        background="white"
       >
         <Heading
           as="u"
-          textDecorationColor="#7e57c2"
+          textDecorationColor="primary.light"
+          size="xl"
           py={3}
           textAlign="center"
         >
           Sobre mi
         </Heading>
         <Stack>
-          <Heading size="lg">Quién soy</Heading>
+          <Heading
+            as="u"
+            textDecorationColor="primary.light"
+            size="lg"
+          >
+            Quién soy
+          </Heading>
           <Text>
             Hola, soy Luciano, un programador autodidacta.
             Un día decidí cambiar de profesión y dejar de ser reparador de computadoras.
@@ -39,7 +46,13 @@ const About = () => {
           </Text>
         </Stack>
         <Stack>
-          <Heading size="lg">A qué me dedico?</Heading>
+          <Heading
+            as="u"
+            textDecorationColor="primary.light"
+            size="lg"
+          >
+            A qué me dedico?
+          </Heading>
           <Text>
             Tengo un año de experiencia desarrollando aplicaciones web y construyendo sitios web.
             Mi mundo gira en torno a React, es la tecnología que más me gusta y con la que trabajo a diario.
