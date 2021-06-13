@@ -9,7 +9,7 @@ const ProjectButton = ({icon, iconDescription}) => {
 
   return (
     <Box>
-      <Button position="static" onClick={() => handleActiveStack(iconDescription)}>
+      <Button m={1} position="static" onClick={() => handleActiveStack(iconDescription)}>
         <Image w={6} mr={2} src={icon}></Image>
         {iconDescription}
       </Button>

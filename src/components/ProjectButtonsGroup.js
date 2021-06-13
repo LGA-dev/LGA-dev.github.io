@@ -1,4 +1,4 @@
-import { Heading, SimpleGrid, Stack } from "@chakra-ui/layout";
+import { Flex, Heading, SimpleGrid, Stack, HStack, Box } from "@chakra-ui/layout";
 import bootstrapIcon from '../assets/icons/bootstrap.svg';
 import chakraIcon from '../assets/icons/chakra.png';
 import cssIcon from '../assets/icons/css.svg';
@@ -14,11 +14,7 @@ const ProjectButtonsGroup = () => {
   return (
     <Stack>
       <Heading size="lg">Tecnologías</Heading>
-      <SimpleGrid
-        p={2}
-        columns={[2, 3]}
-        spacing={2}
-      >
+      <Flex wrap="wrap">
         <ProjectButton icon={htmlIcon} iconDescription={"HTML5"}/>
         <ProjectButton icon={jsIcon} iconDescription={"Javascript"}/>
         <ProjectButton icon={cssIcon} iconDescription={"CSS3"}/>
@@ -28,7 +24,7 @@ const ProjectButtonsGroup = () => {
         <ProjectButton icon={reactIcon} iconDescription={"React"}/>
         <ProjectButton icon={reduxIcon} iconDescription={"Redux"}/>
         <ProjectButton icon={gulpIcon} iconDescription={"Gulp"}/>
-      </SimpleGrid>
+      </Flex>
     </Stack>
   );
 }
