@@ -6,14 +6,22 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons
   return (
     <Stack
       spacing={6}
-      p={3}
+      p={6}
       mt={6}
+      mx={3}
       boxShadow="base"
       borderRadius="lg"
       background="white"
     >
       {/* Project name */}
-      <Heading size="lg">{projectName}</Heading>
+      <Heading
+          as="u"
+          textDecorationColor="primary.light"
+          pb={2}
+          textAlign="center"
+        >
+          {projectName}
+        </Heading>
       {/* Project image */}
       <Image border="2px solid" borderColor="primary.light" src={imageURL} />
       {/* Project description */}

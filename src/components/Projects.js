@@ -23,8 +23,9 @@ const Projects = () => {
       {/* Projects Section Content */}
       <Stack
         spacing={6}
-        p={3}
+        p={6}
         mt={3}
+        mx={3}
         boxShadow="base"
         borderRadius="lg"
         background="white"
@@ -34,15 +35,16 @@ const Projects = () => {
         <Heading
           as="u"
           textDecorationColor="primary.light"
-          py={3}
+          pb={2}
           textAlign="center"
         >
           Proyectos
         </Heading>
         <Text>
-          A continuación podes encontrar todos mis proyectos terminados.
-          Aca podes ver todas las tecnologias con las cuales trabajo.
-          Selecciona una tecnología para ver sólo los proyectos en los que se ha utilizado.
+          A continuación podes encontrar mis ultimos proyectos terminados.
+        </Text>
+        <Text>
+          Seleccioná una tecnología para ver sólo los proyectos en los que se ha utilizado.
         </Text>
         {/* Buttons to filter projects by tech */}
         <ProjectButtonsGroup/>
