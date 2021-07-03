@@ -9,6 +9,9 @@ const Contact = () => {
       id="contact"
       gridArea="contact"
       py={12}
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
     >
       <Heading textAlign="center">Contacto</Heading>
       {/* Contact Section Content */}
@@ -17,6 +20,7 @@ const Contact = () => {
         p={3}
         // Check if there are problems with this height at higher resolutions
         height="100%"
+        w={{base: "100%", md: "60%", lg: "500px"}}
         justifyContent="center"
         textAlign="center"
       >

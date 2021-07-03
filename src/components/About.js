@@ -13,6 +13,9 @@ const About = () => {
       textAlign="left"
       background="isabelline"
       textColor="black"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
     >
       {/* About Section Content */}
       <Stack
@@ -23,6 +26,7 @@ const About = () => {
         borderRadius="lg"
         boxShadow="base"
         background="white"
+        width={{base: "100%", lg: "900px"}}
       >
         <Heading
           as="u"
@@ -42,9 +46,9 @@ const About = () => {
             Quién soy?
           </Heading>
           <Text>
-            Hola, soy Luciano, un programador autodidacta.
+            Hola, soy Luciano, un programador autodidacta. <br></br>
             Un día decidí cambiar de profesión y dejar de ser reparador de computadoras.
-            {/* Lo que no sabía entonces es que en el proceso de aprender a programar pronto descubriría una verdadera pasión. */}
+            Lo que no sabía entonces es que en el proceso de aprender a programar pronto descubriría una verdadera pasión.
           </Text>
           <Text>
             Mis recursos principales para aprender fueron videos de Youtube,

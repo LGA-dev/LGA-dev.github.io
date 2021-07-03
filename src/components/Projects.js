@@ -19,6 +19,9 @@ const Projects = () => {
       textAlign="left"
       background="isabelline"
       textColor="black"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
     >
       {/* Projects Section Content */}
       <Stack
@@ -29,8 +32,7 @@ const Projects = () => {
         boxShadow="base"
         borderRadius="lg"
         background="white"
-        // position="relative"
-        // zIndex={5}
+        width={{base: "100%", lg: "900px"}}
       >
         <Heading
           as="u"
@@ -41,10 +43,10 @@ const Projects = () => {
           Proyectos
         </Heading>
         <Text>
-          A continuación podes encontrar mis ultimos proyectos terminados.
+          A continuación podes encontrar mis ultimos proyectos terminados.<br></br>
+          Seleccioná una tecnología para ver sólo los proyectos en los que se ha utilizado.
         </Text>
         <Text>
-          Seleccioná una tecnología para ver sólo los proyectos en los que se ha utilizado.
         </Text>
         {/* Buttons to filter projects by tech */}
         <ProjectButtonsGroup/>

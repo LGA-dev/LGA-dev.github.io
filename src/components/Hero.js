@@ -9,6 +9,9 @@ const Hero = () => {
   return (
     <GridItem
       gridArea="hero"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
     >
       {/* This hidden empty box helps me to keep the Hero Content in the center of the page layout */}
       <Box
@@ -22,6 +25,7 @@ const Hero = () => {
         spacing={16}
         p={3}
         height="80%"
+        // bg="red.100"
         justifyContent="center"
       >
         {/* Heading Text */}

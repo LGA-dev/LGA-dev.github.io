@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/layout";
+import { Grid, SimpleGrid } from "@chakra-ui/layout";
 import CSS3 from '../assets/icons/css.svg';
 import HTML5 from '../assets/icons/html.svg';
 import Javascript from '../assets/icons/javascript.svg';
@@ -36,9 +36,9 @@ const ProjectCardsDeck = ({activeStack}) => {
       techStack: ["HTML5", "React", "ChakraUI", "Redux"],
       techStackIcons: [HTML5, React, ChakraUI, Redux],
       // TODO: Fix CORS error when deploying to heroku
-      projectDemo: "https://www.google.com",
-      // TODO: Ask to change the repo to public visibility
-      projectRepo: "https://www.github.com"
+      projectDemo: "https://github.com/alstroemerieae/alkemy-group-project",
+      // TODO: Ask to change the bitbucket repo to public visibility
+      projectRepo: "https://github.com/alstroemerieae/alkemy-group-project"
     },
     {
       projectName: "The Blog",
@@ -90,7 +90,10 @@ const ProjectCardsDeck = ({activeStack}) => {
   console.log(filteredCards);
   
   return (
-    <Box>
+    <SimpleGrid
+      columns={{base: 1, md: 2, lg: 3}}
+      spacing={{base: 1}}
+    >
       {/* <h2>{activeStack}</h2> */}
       {filteredCards.map(card => (
         <ProjectCard
@@ -102,7 +105,7 @@ const ProjectCardsDeck = ({activeStack}) => {
           projectRepo={card.projectRepo}
         />
       ))}
-    </Box>
+    </SimpleGrid>
   );
 }
 

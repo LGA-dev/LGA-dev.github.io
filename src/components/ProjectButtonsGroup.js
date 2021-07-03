@@ -21,7 +21,7 @@ const ProjectButtonsGroup = () => {
       >
         Tecnologías
       </Heading>
-      <Flex wrap="wrap">
+      <Flex wrap="wrap" justifyContent={{base:"left", md:"center"}}>
         <ProjectButton icon={htmlIcon} iconDescription={"HTML5"}/>
         <ProjectButton icon={jsIcon} iconDescription={"Javascript"}/>
         <ProjectButton icon={cssIcon} iconDescription={"CSS3"}/>

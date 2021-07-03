@@ -1,5 +1,5 @@
 import { Button } from "@chakra-ui/button";
-import { Flex, Heading, Stack, Text } from "@chakra-ui/layout";
+import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/layout";
 import { Image, Link } from "@chakra-ui/react";
 
 const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons, projectDemo, projectRepo }) => {
@@ -12,6 +12,9 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons
       boxShadow="base"
       borderRadius="lg"
       background="white"
+      // background="red.100"
+      justifyContent="space-between"
+      w={{md:"95%", xl: "400px"}}
     >
       {/* Project name */}
       <Heading
@@ -25,7 +28,9 @@ const ProjectCard = ({ projectName, projectDescription, imageURL, techStackIcons
       {/* Project image */}
       <Image border="2px solid" borderColor="primary.light" src={imageURL} />
       {/* Project description */}
-      <Text>{projectDescription}</Text>
+      <Box minHeight={{base:0, md:60}}>
+        <Text>{projectDescription}</Text>
+      </Box>
       {/* Project tech stack icons */}
       <Flex justifyContent="center">
         {
